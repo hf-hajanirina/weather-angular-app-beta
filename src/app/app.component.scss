@@ -1,0 +1,17 @@
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.weather-info {
+  text-align: center;
+  margin-top: 20px;
+}
+.weather-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spacer {
+  flex: 1 1 auto;
+}

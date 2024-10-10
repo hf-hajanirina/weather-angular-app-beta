@@ -1,1 +1,3 @@
-<p>theme-toggle works!</p>
+<mat-slide-toggle [checked]="isDarkTheme" (change)="toggleTheme()">
+  {{ isDarkTheme ? "Dark" : "Light" }} Mode
+</mat-slide-toggle>

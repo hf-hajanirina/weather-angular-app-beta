@@ -1,1 +1,16 @@
-<p>forecast-list works!</p>
+<div class="forecast-container">
+  <mat-card *ngFor="let day of forecast">
+    <mat-card-header>
+      <mat-card-title>{{ day.date }}</mat-card-title>
+    </mat-card-header>
+    <img
+      mat-card-image
+      [src]="'http://openweathermap.org/img/wn/' + day.icon + '@2x.png'"
+      [alt]="day.description"
+    />
+    <mat-card-content>
+      <p>{{ day.temperature | number : "1.0-0" }}°C</p>
+      <p>{{ day.description }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
